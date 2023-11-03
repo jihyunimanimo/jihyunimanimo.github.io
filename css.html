@@ -78,6 +78,65 @@
             first line, first letter, first line, first letter
         </div>
 
+        <style>
+            #d6 div:first-child{
+                color:red;
+            }
+            #d6 div:nth-child(2){
+                color:cornflowerblue
+            }
+            #d6 div:nth-child(3){
+                color:yellowgreen
+            }
+        </style>
+
+        <div id="d6">
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+        </div>
+
+        <style>
+            /* :link, :visited, :hover, :active, :focus */
+            a:link{ /*링크가 있다면*/
+                color:aquamarine;}
+            a:visited{ /*방문한 적이 있다면*/
+                color:red;
+            }
+            a:hover{ /*마우스를 올리면*/
+                color:magenta;
+                font-weight: bold;
+            }
+            a:active{ /*마우스로 누르면*/
+                color:yellow;
+            }
+            a:focus{ /*포커스 되면*/
+                color:green;
+            }
+        </style>
+        <a href="http://www.naver.com">네이버</a>
+
+        <style>
+            #d7>span{ /*자식 요소 선택자*/
+                font-size: 40px;
+            }
+            #d7>span{ /*하위 요소 선택자*/
+                font-style: italic;
+            }
+        </style>
+        <div id="d7">
+            <span>span1</span>
+            <div>
+                <span>span2</span>
+            </div>
+        </div>
+
+        <style>
+            body{font-size: 12px;}
+            div{font-size: 12px;}
+            span{font-size: 12px;}
+            body,div,span{font-size: 12px;}
+        </style>
 
     </body>
 </html>
