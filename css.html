@@ -147,9 +147,111 @@
                 border-right: solid 5px green;
                 border-top: dotted 3px pink;
                 border-bottom: dashed 2px black;
+
+                margin: 50px;
+                margin: 50px 100px; /* 상하 좌우 */
+                margin: 0px 50px 100px 150px; /* 상 우 하 좌 */
+                /*위에서 부터 시계방향*/
+                margin-left:0px;
+                margin-right: 50px;
+                margin-top: 100px;
+                margin-bottom: 150px;
+
+                padding: 50px;
+                padding: 50px 100px; /* 상하 좌우 */
+                padding: 0px 50px 100px 150px; /* 상 우 하 좌 */
+                /*위에서 부터 시계방향*/
+                padding-left:0px;
+                padding-right: 50px;
+                padding-top: 100px;
+                padding-bottom: 150px;
             }
         </style>
         <div id="d8">box model</div>
 
+        <style>
+            #d9{
+                position: absolute;
+                left: 190px;
+                top: 90px;
+            }
+            #d10{
+                position: relative; /* 관계형 */
+                /* relative인 부모는, absolute 자식의 기준이 된다 */
+            }
+        </style>
+        <div id="d10">
+            <div id="d9">absolute</div>
+        </div>
+        
+        <style>
+            #d11{
+                position: fixed; /* 고정된 */
+                top: 0px;
+                right:0px;
+            }
+        </style>
+        <div id="d11">fixed</div>
+
+        <style>
+            #d12{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 60px;
+                font-weight: bold;
+                font-style: italic;
+                text-align: center;
+                margin: 0px auto;
+                width: 300px;
+            }
+            div{font:bold italic small-caps 12px /1.6 "돋움", sans-serif;}
+        </style>
+        <div id="d12">font family</div>
+
+        <style>
+            #d13{
+                letter-spacing: 80px;
+                line-height: 80px;
+            }
+        </style>
+        <div id="d13">letter spacingn line, hight</div>
+
+        <style>
+            #d14{
+                white-space: pre;
+            }
+        </style>
+        <div id="d14">
+            a   b   c
+            d   f
+        </div>
+        <style>
+            ol{
+                list-style: disc;
+            }
+        </style>
+        <ol>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ol>
+
+
+        <style>
+            #d15{
+                width: 500px;
+                max-width: 800px;
+                border-radius: 5px;
+                text-shadow: 2px 2px 1px rgb(111, 136, 86);
+                /* 가로이동, 세로이동, 번짐, 색상*/
+                white-space: nowrap;
+                overflow: hidden;
+                width: 100px;
+            }
+        </style>
+        <div id="d15">
+            min max width min max width min max width min max width min max width min max width min max
+            min max width min max width min max width min max width min max width min max width min max
+            min max width min max width min max width min max width min max width min max width min max
+        </div>
     </body>
 </html>
