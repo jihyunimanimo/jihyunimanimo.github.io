@@ -3,8 +3,96 @@
     <head>
         <title>layout3</title>
         <meta charset="utf-8" />
+        <style>
+            body{
+                background-image: url(bg.png);
+            }
+
+            header h1{
+                font-size: 45px;
+            }
+            header ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+                font-size: 12px;
+            }
+            header li{
+                padding-right: 20px;
+            }
+            .short_line{
+                width: 25px;
+                border-top: solid 1px black;
+            }
+            .content_card{
+                width: 310px;
+                background-color: white;
+                box-shadow: 2px 2px 2px gray;
+            }
+            .content_card h2{
+                margin-top: 0px;
+            }
+            .content_card>div:last-child{
+                padding: 50px;
+            }
+            .content_card>div:first-child{
+                position: relative;/* 관계적인 */
+                /* relative인 부모는 absolute인 자식의 기준이 된다 */
+            }
+            .content_card img{
+                display: block;
+            }
+            .content_card>div:last-child>div:nth-child(2){
+                color: gray;
+            }
+            .category{
+                background-color: black;
+                color: white;
+                position: absolute;
+                /* 위치지정: 절대적인*/
+                left: 0px;
+                bottom: 0px;
+            }
+            .long_line{
+                border-top: dotted 1px gray;
+                margin: 10px 0px;
+            }
+            .content_card p{
+                margin: 0px;
+            }
+        </style>
     </head>
     <body>
-
+        <div id="wrap">
+            <header>
+                <h1>Gridly.</h1>
+                <div class="short_line"></div>
+                <ul>
+                    <li>home</li>
+                    <li>digital design</li>
+                    <li>web disign</li>
+                </ul>
+                <div class="short_line"></div>
+            </header>
+            <div id="content">콘텐츠</div>
+                <section class="content_card">
+                    <div>
+                        <img src="c1.png" />
+                        <div class="category">Photoshop Design</div>
+                    </div>
+                    <div>
+                        <h2>Work Title</h2>
+                        <div>2023. 12. 01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            A direct mail kit that announces the Dulux Colour Awards Competition has commenced. A collection of posters showing the famous colours of history, advertises you add your own colours to history.
+                        </p>
+                        </p>
+                        <div class="long_line"></div>
+                        <div>Read on</div>
+                    </div>
+                </section> 
+            <footer>푸터</footer>
+        </div>
     </body>
 </html>
